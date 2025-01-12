@@ -12,5 +12,7 @@ jobs:
             - uses: actions/setup-node@v3
               with:
                   node-version: "18.x"
-            - run: npm ci
-            - run: npm test
+            - name: Install Dependencies
+              run: npm ci
+            - name: Run Testing
+              run: npm test

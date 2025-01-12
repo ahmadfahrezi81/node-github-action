@@ -1,8 +1,12 @@
 import request from "supertest";
 import { expect } from "chai";
-import app from "./app.mjs";
+import { app, server } from "./app.mjs";
 
 describe("GET /", () => {
+    after(() => {
+        server.close();
+    });
+
     it('respods with "Hello Worlds!"', (done) => {
         request(app)
             .get("/")
