@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Local directories and files
+.history
+
+# dotenv environment variables file
+.env
+
+# MacOS specific files
+.DS_Store
+
+# Build output
+/dist
+
+# Editors/IDE
+.vscode/
+.idea/
